@@ -1,4 +1,6 @@
-# Books API built on NodeJS & Mongo DB using JWT for auth
+# Book Management
+This project is a web application that provides a dashboard for managing books, as well as signup and login functionality. It allows users to view, add, edit, and delete books in a bookstore.
+
 
 ## API documentation
 
