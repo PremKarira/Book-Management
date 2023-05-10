@@ -42,3 +42,43 @@ _http://[site]:[port]/api/endpoints_
     // db.js
     module.exports = '{URL}'; 
     ```
+
+
+## Steps to get Token
+* Signup
+    - Test email : abcde@gmail.com
+    - Test password : 12345
+    <p align="center"><img src="https://github.com/PremKarira/Book-Management/blob/main/images/signup.png?raw=true"></p><br>
+
+* Login
+    - using test email and password
+    <p align="center"><img src="https://github.com/PremKarira/Book-Management/blob/main/images/login.png?raw=true"></p><br>
+
+* View Token in browser storage
+    - in form of key value pair
+    <p align="center"><img src="https://github.com/PremKarira/Book-Management/blob/main/images/token.png?raw=true"></p><br>
+
+## Dashboard Walkthrough
+* Books in Store
+    - The dashboard displays a list of books available in the store.
+    - Each book entry includes the title, description, and price.
+    - To edit a book, click the "Edit" button next to the book entry.
+    - To delete a book, click the "Delete" button next to the book entry.
+    <p align="center"><img src="https://github.com/PremKarira/Book-Management/blob/main/images/dashboard.png?raw=true"></p><br>
+
+* Add New Book
+    - To add a new book to the store, fill in the "Title," "Description," and "Price" fields in the "Add New Book" section.
+    - Click the "Add Book" button to add the book to the store.
+    - The book will be displayed in the "Books in Store" section.
+    <p align="center"><img src="https://github.com/PremKarira/Book-Management/blob/main/images/addbook.png?raw=true"></p><br>
+
+* Edit Book
+    - When you click the "Edit" button next to a book, the form in the "Edit Book" section will be populated with the book's details.
+    - Modify the desired fields (e.g., title, description, price) in the form.
+    - Click the "Update Book" button to save the changes.
+    - The book's details will be updated in the "Books in Store" section.
+    <p align="center"><img src="https://github.com/PremKarira/Book-Management/blob/main/images/editbook.png?raw=true"></p><br>
+
+* Cancel Edit
+    - If you wish to cancel the edit without saving any changes, click the "Cancel" button in the "Edit Book" section.
+The form will be cleared, and the edit section will be hidden.
