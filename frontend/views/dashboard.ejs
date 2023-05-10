@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bookstore - Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="/dashboard.css">
+</head>
+
+<body>
+  <h1>Bookstore - Dashboard</h1>
+
+  <!-- <h2>Books in Store <button onclick="refresh()">Refresh</button></h2>
+  <ul id="book-list">
+    <% books.forEach(function(book) { %>
+      <li>
+        <strong><%= book.title %></strong> - <%= book.desc %> ($<%= book.price %>)
+        <button onclick="editBook('<%= book._id %>')">Edit</button>
+        <button onclick="deleteBook('<%= book._id %>')">Delete</button>
+      </li>
+    <% }) %>
+  </ul> -->
+  <h2>Books in Store</h2>
+  <ul id="book-list">
+    <!-- Books will be dynamically populated here -->
+  </ul>
+
+  <script src="/dashboard.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Call refreshBooks() to fetch and display the books
+      refreshBooks();
+    });
+  </script>
+
+  <h2>Add New Book</h2>
+  <form id="add-book-form">
+    <input type="text" name="title" placeholder="Title">
+    <input type="text" name="desc" placeholder="Description">
+    <input type="number" name="price" placeholder="Price">
+    <button onclick="addBook()">Add Book</button>
+  </form>
+
+  <p id="confirmation-message" style="display: none;"></p>
+
+  <form id="edit-book-form" style="display: none;">
+  <h2>Edit Book</h2>
+    <input type="hidden" id="edit-book-id">
+    <input type="text" id="edit-book-title" placeholder="Title">
+    <input type="text" id="edit-book-desc" placeholder="Description">
+    <input type="number" id="edit-book-price" placeholder="Price">
+    <button type="button" onclick="updateBook()">Update Book</button>
+    <button type="button" onclick="cancelEdit()">Cancel</button>
+  </form>
+
+  <!-- <script src="/script.js"></script> -->
+  <script src="/dashboard.js"></script>
+</body>
+
+</html>
